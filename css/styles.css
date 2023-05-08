@@ -1,0 +1,301 @@
+/* General styles */
+
+body {
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #9384d1;
+}
+
+p {
+  font-size: 13px;
+  line-height: 1.3em;
+}
+/* Header */
+.header {
+  padding: 50px 0 50px 0;
+  background-color: #9384d1;
+}
+.header h1,
+.header h2 {
+  color: #ecc9ee;
+  text-align: center;
+}
+
+/* Navigation */
+.page-navigation {
+  background-color: #ffdcb6;
+  border-color: #b29a7f;
+  min-height: 64px;
+}
+
+.page-navigation li {
+  float: left;
+  width: 100px;
+  list-style-type: none;
+}
+
+.page-navigation a {
+  display: block;
+  color: #b29a7f;
+  line-height: 4em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.page-navigation li a:hover {
+  color: #4c4236;
+  background-color: #ecc9ee;
+}
+
+.login-form {
+  padding: 15px 0;
+  float: right;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.login-form input[type="submit"] {
+  padding: 5px 15px;
+  border: 1px solid #b29a7f;
+  color: #b29a7f;
+  border-style: outset;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.login-form input[type="submit"]:hover,
+.collection-text button:hover {
+  background-color: #4c4236;
+}
+
+.tooltip {
+  background-color: #000;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  width: 200px;
+  display: none;
+  color: #fff;
+  text-align: left;
+  font-size: 12px;
+}
+
+/* Main part */
+.collection-title {
+  color: #4c4236;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #b29a7f;
+  font-size: 36px;
+}
+.collection-title small {
+  color: #b29a7f;
+  font-size: 70%;
+}
+
+.collections {
+  overflow: auto;
+}
+.collection-item-outer {
+  display: block;
+  float: left;
+  padding: 0 0 0 3px;
+  width: calc(100% / 3);
+  height: max-content;
+  box-sizing: border-box;
+}
+.collections > div:first-child {
+  padding-left: 0;
+  padding-right: 5px;
+}
+.collections > div:last-child {
+  padding-left: 5px;
+  padding-right: 0;
+}
+.collection-item {
+  border: 1px solid #b29a7f;
+  height: fit-content;
+  width: 300px;
+}
+
+.collection-item img,
+.collection-item video {
+  width: 100%;
+}
+.collection-text {
+  padding: 0 20px 20px 20px;
+}
+.collection-text h3 {
+  color: #4c4236;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.collection-text p {
+  max-height: 80px;
+  overflow: scroll;
+}
+
+.collection-text button {
+  padding: 10px;
+  border: 1px solid #b29a7f;
+  color: #b29a7f;
+  border-style: outset;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+}
+
+/* Footer */
+.footer {
+  background-color: #ecc9ee;
+  padding: 20px 0;
+  margin-top: 32px;
+}
+
+.footer-text {
+  text-align: center;
+  color: #a085bc;
+}
+
+.wrapper {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  display: inline-flex;
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #8b1874;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #cd201f;
+  color: #ffffff;
+}
