@@ -5,7 +5,8 @@ body {
   font-size: 100%;
 }
 
-.container {
+.container,
+.about-container {
   margin: 0 auto;
   width: 960px;
 }
@@ -129,7 +130,8 @@ p {
   font-size: 70%;
 }
 
-.collections {
+.collections,
+.about-collection {
   overflow: auto;
 }
 .collection-item-outer {
@@ -158,7 +160,8 @@ p {
 .collection-item video {
   width: 100%;
 }
-.collection-text {
+.collection-text,
+.about-text {
   padding: 0 20px 20px 20px;
 }
 .collection-text h3 {
@@ -209,7 +212,8 @@ p {
   color: #a085bc;
 }
 
-.wrapper {
+.wrapper,
+.about-collection {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -298,4 +302,33 @@ p {
 .wrapper .youtube:hover .tooltip::before {
   background: #cd201f;
   color: #ffffff;
+}
+
+/* About page*/
+.about-image {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  padding: 0 0 10px 0;
+  max-width: 640px;
+  max-height: 480px;
+}
+.about-item-outer {
+  display: inline-flex;
+  float: left;
+  flex: 1;
+  padding: 0 0 0 0;
+  width: max-content;
+  height: max-content;
+  box-sizing: border-box;
+}
+.about-text h3 {
+  color: #4c4236;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.about-text p {
+  max-height: 200px;
+  overflow: scroll;
 }
