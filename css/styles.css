@@ -328,17 +328,81 @@ p {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.about-text p {
+.about-text p,
+.contact-text p {
   max-height: 200px;
   overflow: scroll;
 }
 
-.about-container {
+.about-container,
+.contact-container {
   margin: 0 auto;
   width: 960px;
 }
-.about-collection-item {
+.about-collection-item,
+.contact-collection-item {
   border: 1px solid #b29a7f;
   height: fit-content;
   width: 640px;
+}
+
+/*Contact page*/
+.contact-item-outer {
+  display: flex;
+  justify-content: center;
+}
+.contact-form-container {
+  border-radius: 5px;
+  background-color: #fff5e9;
+  padding: 20px;
+}
+
+.contact-form-container input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.contact-form-container input[type="submit"] {
+  padding: 5px 15px;
+  border: 1px solid #b29a7f;
+  color: #b29a7f;
+  border-style: outset;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.contact-form-container input[type="submit"]:hover {
+  background-color: #4c4236;
+}
+
+.contact-text h2 {
+  color: #4c4236;
+  overflow: hidden;
+  white-space: pre-wrap;
+  text-align: center;
+  text-justify: distribute;
 }

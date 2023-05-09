@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>About / Birds&amp;Cacti</title>
+    <title>Contacts / Birds&amp;Cacti</title>
     <script
       src="https://kit.fontawesome.com/112e2684f8.js"
       crossorigin="anonymous"
@@ -22,7 +22,7 @@
     <header class="header">
       <div class="container">
         <h1>Birds and Cacti</h1>
-        <h2><small>About</small></h2>
+        <h2><small>Contacts</small></h2>
       </div>
     </header>
     <!--Navigation bar with login form-->
@@ -53,36 +53,54 @@
     </nav>
     <!--Main section with project description-->
     <main>
-      <div class="about-container">
+      <div class="contact-container">
         <h2 class="collection-title">
-          About this project <small>Visualise Your Ideas</small>
+          Contact us <small>Visualise Your Ideas</small>
         </h2>
-        <div class="about-collection">
-          <div class="about-item-outer">
-            <div class="about-collection-item">
-              <img
-                src="https://picsum.photos/640/480?random=1"
-                alt="random picture"
-              />
-              <div class="about-text">
-                <h3>Birds are welcoming you!</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
-                  inventore aliquam reiciendis dolorem suscipit dolore deleniti
-                  error eos facilis, aperiam provident iste mollitia minima illo
-                  unde dignissimos enim voluptas ea? Lorem ipsum dolor sit amet
-                  consectetur, adipisicing elit. Sint inventore aliquam
-                  reiciendis dolorem suscipit dolore deleniti error eos facilis,
-                  aperiam provident iste mollitia minima illo unde dignissimos
-                  enim voluptas ea? Lorem ipsum dolor sit amet consectetur,
-                  adipisicing elit. Sint inventore aliquam reiciendis dolorem
-                  suscipit dolore deleniti error eos facilis, aperiam provident
-                  iste mollitia minima illo unde dignissimos enim voluptas ea?
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
-                  inventore aliquam reiciendis dolorem suscipit dolore deleniti
-                  error eos facilis, aperiam provident iste mollitia minima illo
-                  unde dignissimos enim voluptas ea?
-                </p>
+        <div class="contact-collection">
+          <div class="contact-item-outer">
+            <div class="contact-collection-item">
+              <div class="contact-text">
+                <h2>Please contact us with any questions!</h2>
+
+                <div class="contact-form-container">
+                  <form action="#">
+                    <label for="fname">First Name</label>
+                    <input
+                      type="text"
+                      id="fname"
+                      name="firstname"
+                      placeholder="Your name"
+                    />
+
+                    <label for="lname">Last Name</label>
+                    <input
+                      type="text"
+                      id="lname"
+                      name="lastname"
+                      placeholder="Your last name"
+                    />
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                      <option value="australia">Australia</option>
+                      <option value="canada">Canada</option>
+                      <option value="australia">Poland</option>
+                      <option value="australia">Ukraine</option>
+                      <option value="usa">USA</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea
+                      id="subject"
+                      name="subject"
+                      placeholder="Type your message here"
+                      style="height: 200px"
+                    ></textarea>
+
+                    <input type="submit" value="Submit" />
+                  </form>
+                </div>
               </div>
             </div>
           </div>
