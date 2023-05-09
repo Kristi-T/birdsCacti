@@ -5,8 +5,7 @@ body {
   font-size: 100%;
 }
 
-.container,
-.about-container {
+.container {
   margin: 0 auto;
   width: 960px;
 }
@@ -315,6 +314,7 @@ p {
 }
 .about-item-outer {
   display: inline-flex;
+  justify-content: center;
   float: left;
   flex: 1;
   padding: 0 0 0 0;
@@ -331,4 +331,14 @@ p {
 .about-text p {
   max-height: 200px;
   overflow: scroll;
+}
+
+.about-container {
+  margin: 0 auto;
+  width: 960px;
+}
+.about-collection-item {
+  border: 1px solid #b29a7f;
+  height: fit-content;
+  width: 640px;
 }
